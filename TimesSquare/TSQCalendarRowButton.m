@@ -52,7 +52,7 @@
 {
     self.subtitleLabel.textColor = self.currentTitleColor;
     self.subtitleLabel.shadowColor = self.currentTitleShadowColor;
-    self.subtitleLabel.shadowOffset = self.titleLabel.shadowOffset;
+    self.subtitleLabel.shadowOffset = CGSizeZero;
 }
 
 - (void)setTitleShadowColor:(UIColor *)color forState:(UIControlState)state;

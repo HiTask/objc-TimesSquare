@@ -37,7 +37,7 @@
     static CGSize shadowOffset;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        shadowOffset = CGSizeMake(0.0f, onePixel);
+        shadowOffset = CGSizeZero;
     });
     self.shadowOffset = shadowOffset;
     self.columnSpacing = onePixel;
