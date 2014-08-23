@@ -114,6 +114,9 @@
     _lastDate = [self.calendar dateByAddingComponents:offsetComponents toDate:firstOfMonth options:0];
 }
 
+-(void)deselectDate{
+	[[self cellForRowAtDate:_selectedDate] selectColumnForDate:nil];
+}
 - (void)setSelectedDate:(NSDate *)newSelectedDate;
 {
     // clamp to beginning of its day
